@@ -4,11 +4,12 @@ import plotly.express as px
 from streamlit_option_menu import option_menu
 import calendar
 from datetime import datetime
-import database as db  
+import database as db  # our custom module
 import pandas as pd
 import requests
 from sklearn.linear_model import LinearRegression
 import numpy as np
+
 # Define income and expense categories
 incomes = ["Salary", "Other income"]
 expenses = ["Rent", "Utilities", "Groceries", "Car", "Other Expenses", "Saving"]
@@ -27,10 +28,13 @@ st.title(page_title + " " + page_icon)
 years = [datetime.today().year, datetime.today().year + 1]
 months = list(calendar.month_name[1:])
 
-# Get all periods from Firestore
+# Get all periods (from database or fallback)
 def get_all_periods():
-    items = db.fetch_all_periods()  
+    items = db.fetch_all_periods()
+    if not items:  # fallback in case DB is empty
+        items = [f"{year}_{month}" for year in years for month in months]
     return items
+
 
 # Sidebar menu for navigation
 selected = st.sidebar.selectbox("Choose an option", ["data entry", "data visualisation", "AI Insights"])
@@ -300,4 +304,5 @@ if selected == "AI Insights":
         st.plotly_chart(health_fig)
 
     else:
+
         st.warning("Not enough data to generate AI insights. Please add more historical data.")
