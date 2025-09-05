@@ -1,39 +1,44 @@
-Income and Expense Tracker
-https://incomes-expenses-tracker.streamlit.app/
+# **Income and Expense Tracker**
 
-Project Description
+[**Live Demo**](https://incomes-expenses-tracker.streamlit.app/)
 
-A financial management web application built with Streamlit that tracks income, expenses, and budget goals with AI-powered insights and multi-currency support.
+A **financial management web application** built with **Streamlit** that tracks income, expenses, and budget goals with **AI-powered insights** and **multi-currency support**.
 
-Key Features
+---
 
-📊 Data Management
+## **Project Description**
 
-Monthly income and expense tracking with predefined categories
-Budget goal setting with progress monitoring
-Comment functionality for additional notes
+This application helps users manage their finances efficiently by tracking income and expenses, setting budget goals, and providing predictive AI insights to improve financial health.
 
-📈 Data Visualization
+---
 
-Multi-currency support (TND, USD, EUR) with real-time exchange rates
-Interactive charts: Sankey diagrams, line charts, and bar charts
-Financial metrics dashboard
+## **Key Features**
 
-🤖 AI Insights
+### 📊 **Data Management**
+- Track monthly income and expenses with predefined categories  
+- Set budget goals and monitor progress  
+- Add comments/notes for additional context  
 
+### 📈 **Data Visualization**
+- Multi-currency support (TND, USD, EUR) with **real-time exchange rates**  
+- Interactive charts: Sankey diagrams, line charts, bar charts  
+- Financial metrics dashboard for quick insights  
 
-Machine learning expense predictions using Linear Regression
-Financial health scoring system
-Personalized savings recommendations
-Predictive analytics with trend forecasting
+### 🤖 **AI Insights**
+- Machine learning-based expense predictions using **Linear Regression**  
+- Financial health scoring system  
+- Personalized savings recommendations  
+- Trend forecasting and predictive analytics  
 
-💾 Data Storage
+### 💾 **Data Storage**
+- Cloud-based **Google Firestore** database  
+- Historical data analysis across multiple periods  
 
-Cloud-based Firestore database
-Historical data analysis across multiple periods
-Technical Stack
-Frontend: Streamlit with custom theming
-Visualization: Plotly (Graph Objects & Express)
-ML: Scikit-learn, Pandas, NumPy
-Database: Google Firestore
-APIs: Exchange rate integration
+---
+
+## **Technical Stack**
+- **Frontend:** Streamlit with custom theming  
+- **Visualization:** Plotly (Graph Objects & Express)  
+- **ML & Data Handling:** Scikit-learn, Pandas, NumPy  
+- **Database:** Google Firestore  
+- **APIs:** Exchange rate integration
