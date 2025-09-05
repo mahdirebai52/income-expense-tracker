@@ -1,49 +1,39 @@
 Income and Expense Tracker
 
+
 Project Description
-A comprehensive financial management web application built with Streamlit that helps users track their income, expenses, and budget goals with intelligent insights and multi-currency support.
+
+A financial management web application built with Streamlit that tracks income, expenses, and budget goals with AI-powered insights and multi-currency support.
 
 Key Features
 
-📊 Data Entry & Management
+📊 Data Management
 
-Easy-to-use forms for recording monthly income and expenses
-Predefined categories for both income (Salary, Other income) and expenses (Rent, Utilities, Groceries, Car, Other Expenses, Saving)
-Budget goal setting with progress tracking
+Monthly income and expense tracking with predefined categories
+Budget goal setting with progress monitoring
 Comment functionality for additional notes
 
+📈 Data Visualization
 
-📈 Interactive Data Visualization
 Multi-currency support (TND, USD, EUR) with real-time exchange rates
-Comprehensive financial metrics dashboard
-Multiple chart types including:
-Sankey diagrams for income/expense flow visualization
-Line charts for trend analysis over time
-Bar charts for category-wise comparisons
-Budget goal progress indicators
- AI-Powered Insights
+Interactive charts: Sankey diagrams, line charts, and bar charts
+Financial metrics dashboard
 
-Machine learning-based expense predictions using Linear Regression
+🤖 AI Insights
+
+
+Machine learning expense predictions using Linear Regression
 Financial health scoring system
-Personalized savings goal recommendations
-Predictive analytics with visual trend forecasting
-Interactive gauge charts for financial wellness tracking
-Data Persistence
+Personalized savings recommendations
+Predictive analytics with trend forecasting
 
-Cloud-based data storage using Firestore
+💾 Data Storage
+
+Cloud-based Firestore database
 Historical data analysis across multiple periods
-Secure and reliable data management
 Technical Stack
 Frontend: Streamlit with custom theming
-Data Visualization: Plotly (Graph Objects & Express)
-Machine Learning: Scikit-learn (Linear Regression)
-Data Processing: Pandas, NumPy
+Visualization: Plotly (Graph Objects & Express)
+ML: Scikit-learn, Pandas, NumPy
 Database: Google Firestore
-API Integration: Exchange rate API for currency conversion
-UI Components: Streamlit Option Menu for navigation
-Use Cases
-Personal finance management and budgeting
-Expense tracking and analysis
-Financial goal setting and monitoring
-Predictive financial planning
-Multi-currency expense management for travelers or international users
+APIs: Exchange rate integration
